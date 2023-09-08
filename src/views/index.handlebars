@@ -1,0 +1,19 @@
+<div>
+    {{!-- <h1>Usuario al azar:</h1>
+    <p>Nombre: {{name}}</p>
+    <p>Apellido: {{lastName}}</p>
+    <p>Edad: {{age}}</p>
+    <p>Email: {{email}}</p>
+    <p>Telefono: {{phone}}</p> --}}
+    <h1>Saludos {{user.name}}</h1>
+    {{#if isAdmin}}
+    {{#each food}}
+    <div>
+        <p>{{this.name}}</p>
+        <p>{{this.price}}</p>
+    </div>
+    {{/each}}
+    {{else}}
+    <p>No eres administrador</p>
+    {{/if}}
+</div>
